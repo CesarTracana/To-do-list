@@ -1,0 +1,16 @@
+{% extends 'base.html'%}
+
+{%block body %}
+    <h1>HOLA {{nombre}} BIENVENIDO QUERIDO!!!!</h1>
+
+    <h2>Esta es tu lista de invitados</h2>
+
+    <ul>
+        {% for nom in lista_nombres %}
+        
+            <li>{{nom}}</li>
+
+        {% endfor %}
+    </ul>
+
+{% endblock %}
