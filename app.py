@@ -19,8 +19,13 @@ def agregar():
               lista_tareas.append(nueva_tarea)
         return redirect('/')
 
+#ruta para eliminar
+@app.route('/delete/<int:id>')
+#vista
+def borrar(id):
+      lista_tareas.pop(id)
+      return redirect('/')
 
-""" @app.route('/about')
+@app.route('/about/<nombre>')
 def about(nombre):
-    return f' !hols, yo soy {nombre} y estudio ingenieria en computacion
-"""
+      return f'¡hola, yo soy {nombre} y estudia ingenieria en computacion'

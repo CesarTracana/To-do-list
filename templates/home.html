@@ -12,14 +12,29 @@
         </form>
     </section>
 
+    {% if lista_tareas|length < 1 %}
+        <h4 class="subtitle">No hay tareas pendientes!<h4>
+    {% else %}
+
     <!-- contenedor de tareas -->
     <section class="container">
         
         {% for tarea in lista_tareas %}
             <article class="task container">
-                {{tarea}}
+                <table>
+                    <tr>
+                        <td>
+                            {{tarea}}
+                        </td>
+                        <td>
+                        <a class="anchor" href="/delete/{{lista_tareas.index(tarea)}}">borrar</a>
+                        </td>
+                          
+                    </tr>
+                </table>
             </article>
         {%endfor%}
+        {% endif %}
     <section>
         
     
