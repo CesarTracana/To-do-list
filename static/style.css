@@ -1,0 +1,61 @@
+/*font-family: 'Lato', sans-serif;*/
+
+*{
+    font-family: 'Yuji Boku', serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: azure;
+    text-align: center;
+}
+
+.container{
+    width: 600px;
+    margin: 20px auto;
+    background-color: #efefef;
+    border-radius: 10px;
+    padding: 1 rem 0;
+    transition: box-shadow 0.3s easy;
+}
+
+.container:hover{
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+title, .subtitle{
+    text-align: center;
+}
+
+.anchor{
+    text-decoration: none;
+}
+
+#btn-submit{
+    color: white;
+    background-color: rgb(171, 171, 255);
+    border-radius: 5px;
+    margin: 0 15px;
+}
+
+form{
+    width: 250px;
+    margin: 20px auto;
+}
+
+.task{
+    width: 450px;
+    background-color: aquamarine;
+
+}
+
+table, tr, td{
+    margin: 20px auto;
+}
+
+.icon{
+    width: 30px;
+    height: 30px;
+}
